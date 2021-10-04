@@ -472,32 +472,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        var map = L.map('mapid', {
-			  scrollWheelZoom: false,
-			  id:'mapbox/dark-v10'
-			});
-			
-			
-			//map custom icon
-			var greenIcon = L.icon({
-				iconUrl: 'images/icon2.png',
-				iconSize: [35, 52],
-				iconAnchor: [22, 50]
-			});
-			
-			
-			// Set the position and zoom level of the map
-			map.setView([30, 0], 5);
-			L.marker([42.444508,-76.499491],{icon:greenIcon}).addTo(map);
-			// Initialize the base layer
-			accessToken='VLmVThJ2b5Bj2Rx2Do0IgWyFw8n7Dg3Mob7avrnxzzZlkuhTWch0vKV4ljpkTjdH'
-			var osm_mapnik = L.tileLayer('https://tile.jawg.io/jawg-terrain/{z}/{x}/{y}.png?access-token=VLmVThJ2b5Bj2Rx2Do0IgWyFw8n7Dg3Mob7avrnxzzZlkuhTWch0vKV4ljpkTjdH', {
-				maxZoom: 20,
-				minZoom: 2,
-				attribution: '&copy; OSM Mapnik <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-			}).addTo(map);
-    </script>
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
